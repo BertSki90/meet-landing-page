@@ -66,19 +66,7 @@ ol {
     list-style-type: none;
 }
 
-/* |||| GENERAL |||| */
-
-main {
-    text-align: center;
-}
-
-article {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-/* |||| TEXT |||| */
+/* |||| TEXT PRESET |||| */
 
 /* FONT FAMILY */
 .text-preset-1,
@@ -127,6 +115,44 @@ article {
     line-height: 150%;
 }
 
+/* |||| GENERAL |||| */
+
+main {
+    text-align: center;
+}
+
+article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 29px;
+    padding: 16px 40px;
+}
+
+.button__cyan {
+    background-color: var(--cyan__600);
+    color: var(--white);
+}
+
+.button__cyan-download-version {
+    color: var(--cyan__300);
+    margin-inline-start: 4px;
+}
+
+.button__purple {
+    background-color: var(--purple__600);
+    color: var(--white);
+}
+
+.button__purple-download-version {
+    color: var(--purple__300);
+}
+
+.number-label {}
+
 /* |||| HEADER - LOGO |||| */
 
 header {
@@ -156,10 +182,30 @@ header {
 
 .intro article {
     gap: 24px;
+    padding: 0 5px;
 }
 
 .intro h2 {
+    color: var(--slate__900);
     max-width: 10ch;
 }
 
-/* working on intro section. */
+.intro p {
+    color: var(--slate__600);
+    max-width: 29ch;
+}
+
+.intro__buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.image-secondary {
+  position: absolute;
+  left: -10000px;
+  /* width: 1px; */
+  /* height: 1px; */
+  /* top: auto; */
+  overflow: hidden;
+}
