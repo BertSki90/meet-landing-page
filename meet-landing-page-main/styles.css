@@ -22,9 +22,9 @@
     --white: rgb(250, 250, 250);
 
     /* FONT-SIZE */
-    --font-size__xl: 64px;
-    --font-size__lg: 40px;
-    --font-size__md: 18px;
+    --font-size__xl: clamp(40px, 5vw, 64px);
+    --font-size__lg: clamp(32px, 5vw, 40px);
+    --font-size__md: clamp(16px, 5vw, 18px);
     --font-size__sm: 16px;
 }
 
@@ -72,6 +72,12 @@ main {
     text-align: center;
 }
 
+article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 /* |||| TEXT |||| */
 
 /* FONT FAMILY */
@@ -104,6 +110,11 @@ main {
     font-size: 18px;
 }
 
+/* LETTER SPACING */
+.text-preset-3 {
+    letter-spacing: 4px;
+}
+
 /* LINE HEIGHT */
 .text-preset-1,
 .text-preset-2,
@@ -116,12 +127,7 @@ main {
     line-height: 150%;
 }
 
-/* LETTER SPACING */
-.text-preset-3 {
-    letter-spacing: 4px;
-}
-
-/* |||| HEADER / LOGO |||| */
+/* |||| HEADER - LOGO |||| */
 
 header {
     display: flex;
@@ -137,13 +143,23 @@ header {
 /* |||| INTRO - SECTION |||| */
 
 .intro {
-    /* display: flex; */
-    /* flex-direction: column; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-
-/* look into having the image get cropped from both sides as screen shrinks. At the moment only right side gets cropped during shrinking of screen. */
 
 .image-main {
-    object-fit: none;
-    min-width: 390px;
+    margin: 0 0 48px 0;
+    object-fit: fill;
+    min-width: 410px;
 }
+
+.intro article {
+    gap: 24px;
+}
+
+.intro h2 {
+    max-width: 10ch;
+}
+
+/* working on intro section. */
