@@ -24,13 +24,13 @@
 
     /* FONT-SIZE */
     /* --font-size__xl: clamp(40px, 2vw, 64px); */
-    --font-size__xl: clamp(2.5rem, 6.225vw, 4rem);
+    --font-size__xl: clamp(2.5rem, 6.25vw, 4rem);
     /* --font-size__lg: clamp(32px, 2.5vw, 40px); */
-    --font-size__lg: clamp(2rem, 5vw, 2.5rem);
+    --font-size__lg: clamp(2rem, 4.688vw, 2.5rem);
     /* --font-size__md: clamp(16px, 2vw, 18px); */
     --font-size__md: clamp(1rem, 2vw, 1.125rem);
     /* --font-size__sm: clamp(12px, 2vw, 16px); */
-    --font-size__sm: clamp(0.75rem, 5vw, 1rem);
+    --font-size__sm: clamp(0.75rem, 1.823vw, 1rem);
 }
 
 /* |||| RESET |||| */
@@ -230,6 +230,7 @@ header {
     /* margin: 0 0 48px 0; */
     /* margin-block-end: 3em; */
     object-fit: fill;
+    overflow: hidden;
     min-width: 410px;
 }
 
@@ -263,13 +264,13 @@ header {
 }
 
 .image-secondary {
-  object-fit: fill;
-  position: absolute;
   left: -10000px;
+  object-fit: fill;
+  overflow: hidden;
+  position: absolute;
   /* width: 1px; */
   /* height: 1px; */
   /* top: auto; */
-  overflow: hidden;
 }
 
 /* |||| INFORMATION SECTION |||| */
@@ -349,7 +350,7 @@ footer p {
     /* margin-block-end: 24px; */
     margin-block-end: 1.5em;
     /* padding: 0 32px; */
-    padding: 0 2em;
+    padding: 0 1.8em;
 }
 
 footer button {
@@ -361,6 +362,12 @@ footer button {
 
 /* || TABLET SCREEN || */
 @media screen and (min-width: 481px) {
+
+    /* HEADER - LOGO */
+    header {
+        padding-top: 3em;
+    }
+
     /* INTRO */
     .image-main {
         min-width: 810px;
@@ -381,7 +388,78 @@ footer button {
     /* INFO */
     .photo-container {
         grid-template-columns:  1fr 1fr 1fr 1fr;
-        margin: 0 2.75em;
+        margin: 4em 2.75em;
         max-width: 100%;
     }
+
+    .info h3 {
+        margin: 0.445em 0 0.889em;
+        max-width: 20ch;
+    }
+
+    .info p {
+        max-width: 53ch;
+    }
+
+    /* FOOTER */
+    footer {
+        background-image: url("./assets/tablet/image-footer.jpg");
+        background-size: cover;
+    }
+
+    footer h3 {
+        margin-block-end: 0.667em;
+        padding-top: 1.778em;
+    }
+
+    footer p {
+        margin: 0 auto 1.5em;
+        max-width: 52ch;
+    }
+}
+
+/* || DESKTOP SCREEN || */
+
+@media screen and (min-width: 1025px) {
+    
+    /* HEADER - LOGO */
+    header {
+        padding-top: 5em;
+    }
+
+    /* INTRO */
+    .intro {
+        flex-direction: row;
+        justify-content: center;
+        scrollbar-width: none;
+        overflow: hidden;
+    }
+
+    .image-main {
+        align-self: start;
+        margin: 4em 0 0 -1.7em;
+        min-width: 0;
+    }
+
+    .intro article {
+        margin: 0 7.989em;
+    }
+
+    .intro h2 {
+        margin-top: 1.36em;
+    }
+
+    .intro p {
+        margin: 1.78em 0;
+        max-width: 40ch;
+    }
+
+    .image-secondary {
+        align-self: end;
+        left: 0px;
+        margin: 0 -1.7em 4em 0;
+        object-fit: fill;
+        overflow: hidden;
+        position: relative;
+}
 }
