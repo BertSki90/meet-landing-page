@@ -15,8 +15,10 @@
     --cyan__300: rgb(143, 227, 249);
     --cyan__600: rgb(77, 150, 168);
     --cyan__600__cover: rgba(77, 150, 168, 0.9);
+    --cyan__button-hover: #71C0D4;
     --purple__300: rgb(217, 184, 255);
     --purple__600: rgb(133, 95, 177);
+    --purple__button-hover: #B18BDD;
     --slate__300: rgb(209, 209, 223);
     --slate__600: rgb(135, 135, 157);
     --slate__900: rgb(40, 40, 61);
@@ -176,6 +178,20 @@ button {
 .button__cyan-download-version {
     /* margin-inline-start: 4px; */
     margin-inline-start: 0.25em;
+}
+
+/* button states */
+
+.button__cyan:hover,
+.button__cyan:active,
+.button__cyan:focus {
+    background-color: var(--cyan__button-hover);
+}
+
+.button__purple:hover,
+.button__purple:active,
+.button__purple:focus {
+    background-color: var(--purple__button-hover);
 }
 
 /* NUMBERED DIVIDER */
