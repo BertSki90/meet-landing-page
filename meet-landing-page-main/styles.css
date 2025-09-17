@@ -510,6 +510,7 @@ footer button {
     /* FOOTER */
     footer .numbered-divider {
         margin: -6.875em auto 0;
+        justify-self: center;
     }
 
     footer {
@@ -521,7 +522,7 @@ footer button {
         align-items: center;
         display: flex;
         /* padding: 7em 5em; */
-        padding: 14em 5em;
+        padding: 7em 10em;
     }
 
     footer h3,
