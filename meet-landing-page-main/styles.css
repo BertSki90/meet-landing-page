@@ -152,8 +152,8 @@ article {
 
 button {
     border-radius: 29px;
-    /* padding: 16px 40px; */
-    padding: 1em 2.5em;
+    padding: 0.8em 2.3em;
+    /* padding: 1em 2.5em; */
 }
 
 .button__cyan {
@@ -452,8 +452,8 @@ footer button {
 
     .image-main {
         align-self: start;
-        margin: 1.5em 0 0 -1.7em;
-        /* margin: 3em 0 0 -1.7em; */
+        /* margin: 1.5em 0 0 -1.7em; */
+        margin: 0 0 0 -1.7em;
         min-width: 0;
     }
 
@@ -483,6 +483,11 @@ footer button {
         object-fit: fill;
         overflow: hidden;
         position: relative;
+    }
+
+    .numbered-divider-1 {
+        /* margin-block-start: 3.5em; */
+        margin-block-start: 3.4em;
     }
 
     /* INFO */
