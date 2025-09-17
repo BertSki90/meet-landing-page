@@ -452,7 +452,8 @@ footer button {
 
     .image-main {
         align-self: start;
-        margin: 4em 0 0 -1.7em;
+        /* margin: 4em 0 0 -1.7em; */
+        margin: 3em 0 0 -1.7em;
         min-width: 0;
     }
 
@@ -461,7 +462,8 @@ footer button {
     }
 
     .intro h2 {
-        margin-top: 1.36em;
+        /* margin-top: 1.36em; */
+        margin-top: 0.86em;
     }
 
     .intro p {
@@ -474,9 +476,10 @@ footer button {
     }
 
     .image-secondary {
-        align-self: end;
+        align-self: start;
         left: 0px;
-        margin: 0 -1.7em 4em 0;
+        /* margin: 0 -1.7em 4em 0; */
+        margin: 3em -1.7em 0 0;
         object-fit: fill;
         overflow: hidden;
         position: relative;
