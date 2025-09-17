@@ -508,6 +508,10 @@ footer button {
     }
 
     /* FOOTER */
+    footer .numbered-divider {
+        margin: -6.875em auto 0;
+    }
+
     footer {
         background-image: url("./assets/desktop/image-footer.jpg");
         text-align: start;
@@ -516,7 +520,8 @@ footer button {
     .footer-flex {
         align-items: center;
         display: flex;
-        padding: 7em 5em;
+        /* padding: 7em 5em; */
+        padding: 14em 5em;
     }
 
     footer h3,
