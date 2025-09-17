@@ -494,8 +494,8 @@ footer button {
     /* INFO */
     .photo-container {
         gap: 2em;
-        /* max-width: 1120px; */
-        max-width: 70em;
+        max-width: 71em;
+        /* max-width: 70em; */
     }
 
     .info h3 {
