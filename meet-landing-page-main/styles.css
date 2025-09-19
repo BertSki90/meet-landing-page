@@ -121,15 +121,6 @@ ol {
     line-height: 150%;
 }
 
-.text-preset-1,
-.text-preset-2,
-.text-preset-3,
-.text-preset-5,
-.text-preset-4,
-button {
-    z-index: 100;
-}
-
 /* |||| GENERAL |||| */
 
 main {
@@ -223,7 +214,7 @@ header {
     display: flex;
     justify-content: center;
     margin-block-end: 4em;
-    padding-top: 3.188em;
+    padding-block-start: 3.188em;
 }
 
 .logo {
@@ -270,10 +261,8 @@ header {
 }
 
 .image-secondary {
-  left: -10000px;
+  display:none;
   object-fit: fill;
-  overflow: hidden;
-  position: absolute;
 }
 
 /* |||| INFORMATION SECTION |||| */
@@ -283,14 +272,14 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     margin: 4em 0;
-    max-width: 311px;
+    max-width: 19.438em;
 }
 
 .photo-container img {
     border-radius: 10px;
 }
 
-figcaption {
+.sub-title {
     color: var(--cyan__600);
     text-align: center;
     text-transform: uppercase;
@@ -315,7 +304,6 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     margin-block-start: 6.75em;
-    z-index: 5;
 }
 
 footer > .numbered-divider {
@@ -323,21 +311,14 @@ footer > .numbered-divider {
     position: absolute;
 }
 
-footer > picture {
-    position: relative;
-    max-width: 100%;
-    z-index: 5;
-}
-
 .cyan-picture-cover {
     background-color: var(--cyan__600__cover);
-    z-index: 10;
 }
 
 footer h3 {
     color: var(--white);
     margin-block-end: 0.75em;
-    padding-top: 2em;
+    padding-block-start: 2em;
 }
 
 footer p {
@@ -420,7 +401,7 @@ footer button {
 
     footer h3 {
         margin-block-end: 0.667em;
-        padding-top: 1.778em;
+        padding-block-start: 1.778em;
     }
 
     footer p {
@@ -435,7 +416,7 @@ footer button {
     
     /* HEADER - LOGO */
     header {
-        padding-top: 5em;
+        padding-block-start: 5em;
     }
 
     /* INTRO */
@@ -457,7 +438,7 @@ footer button {
     }
 
     .intro h2 {
-        margin-top: 0.36em;
+        margin-block-start: 0.36em;
     }
 
     .intro p {
@@ -470,12 +451,8 @@ footer button {
     }
 
     .image-secondary {
-        align-self: center;
-        left: 0px;
+        display: inherit;
         margin: 0 -1.7em 0 0;
-        object-fit: fill;
-        overflow: hidden;
-        position: relative;
     }
 
     .numbered-divider-1 {
@@ -521,7 +498,7 @@ footer button {
     }
 
     footer h3 {
-        padding-top: 0;
+        padding-block-start: 0;
         max-width: 15ch;
     }
 
