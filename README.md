@@ -138,7 +138,7 @@ footer > picture {
 
 ### Continued development
 
-Completion time: 17:26
+Completion time: 18:30
 
 The last few projects I have been using rem, em, and ch units for spacing and max-width on elements. This is the first time I utilized the clamp() function to add more responsiveness to my projects. I feel more confident with arranging and spacing the elements. I feel most unsure about the footer's background with cyan tint and that more practice with images and more specifically, background images, will be excellent practice.
 
