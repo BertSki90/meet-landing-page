@@ -30,7 +30,7 @@
       </header>
 
       <!-- INTRO -->
-      <section class="intro">
+      <section class="intro" id="intro-to-meet">
         <picture class="image-main">
           <source
             srcset="meet-landing-page-main/assets/desktop/image-hero-left.png"
@@ -42,7 +42,7 @@
           />
         </picture>
 
-        <article aria-labelledby="Introduction to Meet.">
+        <article aria-labelledby="intro-to-meet">
           <h2 class="text-preset-1">Group Chat for Everyone</h2>
           <p class="text-preset-4">
             Meet makes it easy to connect with others face-to-face virtually and
@@ -82,8 +82,8 @@
       </figure>
 
       <!-- INFORMATION -->
-      <section class="info">
-        <article aria-labelledby="General information about Meet.">
+      <section class="info" id="general-info">
+        <article aria-labelledby="general-info">
           <figure class="photo-container">
             <picture>
               <img
@@ -110,7 +110,8 @@
               />
             </picture>
           </figure>
-          <figcaption class="text-preset-3">Built for modern use</figcaption>
+          <!-- <figcaption class="text-preset-3">Built for modern use</figcaption> -->
+          <span class="text-preset-3 sub-title">Built for modern use</span>
 
           <h3 class="text-preset-2">Smarter meetings, all in one place</h3>
           <p class="text-preset-4">
@@ -135,7 +136,11 @@
             Stay connected with reliable HD meetings and unlimited one-on-one
             and group video sessions.
           </p>
-          <button class="text-preset-5 button__purple" type="button">
+          <button
+            class="text-preset-5 button__purple"
+            type="button"
+            aria-labelledby="Download app."
+          >
             Download <span class="button__purple-download-version">v1.3</span>
           </button>
         </div>
